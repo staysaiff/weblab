@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+margin: 0;
+padding: 20px;
+}
+h1 {
+color: #333;
+text-align: center;
+}
+table {
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+td {
+padding: 10px;
+}
+label {
+color: #555;
+font-weight: bold;
+}
+input[type="text"], input[type="email"],
+input[type="password"],
+select, textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 16px;
+}
+input[type="radio"], input[type="checkbox"] {
+margin-right: 5px;
+}
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 18px;
+}
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+.error {
+color: #ff0000;
+font-size: 14px;
+}
+</style>
+</head>
+<body>
+<h1>Gaming Registration Form</h1>
+<table>
+<form action="#" method="post">
+<tr>
+<td><label for="fullname">Full Name:</label></td>
+<td><input type="text" id="fullname" name="fullname"
+required></td>
+</tr>
+<tr>
+    <td><label for="game_username">Game Username:</label></td>
+    <td><input type="text" id="fullname" name="fullname"
+    required></td>
+    </tr>
+<tr>
+<td><label for="email_address">Email Address:</label></td>
+<td><input type="email" id="email" name="email"
+required></td>
+</tr>
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input type="password" id="password"
+name="password"
+required></td>
+</tr>
+<tr>
+<td><label for="confirm_password">Confirm
+Password:</label></td>
+<td><input type="password" id="confirm_password"
+name="confirm_password" required></td>
+</tr>
+<tr>
+<td><label>Gender:</label></td>
+<td>
+<input type="radio" id="male" name="gender" value="male"
+required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender"
+value="female" required>
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender"
+value="other"
+required>
+<label for="other">Other</label>
+</td>
+</tr>
+<tr>
+<td><label for="birthdate">Date of Birth:</label></td>
+<td><input type="date" id="birthdate"
+name="birthdate"
+required></td>
+</tr>
+<tr>
+<td><label for="country">Country:</label></td>
+<td>
+<select id="country" name="country" required>
+<option value="">Select a country</option>
+<option value="IN">India</option>
+<option value="uk">United Kingdom</option>
+<option value="canada">Canada</option>
+<option value="australia">Australia</option>
+<option value="other">Other</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="game_genre">Game Genre:</label></td>
+<td>
+<label for="Action">Action</label>
+<input type="checkbox" id="Action"
+name="game_genre[]"
+value="Action">
+<label for="RPG">RPG</label>
+<input type="checkbox" id="Strategy"
+name="Simulation[]"
+value="Strategy">
+<label for="Adventure">Adventure</label>
+<input type="checkbox" id="Adventure"
+name="game_genre[]"
+value="Adventure">
+<label for="Racing">Racing</label>
+<input type="checkbox" id="Racing"
+name="game_genre[]"
+value="Racing">
+</td>
+</tr>
+<tr>
+    <td><label for="Platform_preference">Platform preference:</label></td>
+    <td>
+    <label for="PC">PC</label>
+    <input type="checkbox" id="PC"
+    name="Platform_preference[]"
+    value="PC">
+    <label for="Console">Console</label>
+    <input type="checkbox" id="Console"
+    name="Console[]"
+    value="Console">
+    <label for="Mobile">Mobile</label>
+    <input type="checkbox" id="Mobile"
+    name="Platform_preference[]"
+    value="Mobile">
+    </td>
+    </tr>
+    <tr>
+        <td><label for="Terms_and_Conditions">Terms and Conditions:</label></td>
+        <td>
+            <input type="checkbox" id="id"
+            name="Terms_and_Conditions">
+        <label for="id">I Agree to the terms and conditions</label> </td>   
+        </tr>
+<td><label for="bio">Security Questions:</label></td>
+<td><textarea id="bio" name="bio"
+rows="4"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;">
+<input type="submit" value="Submit">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
